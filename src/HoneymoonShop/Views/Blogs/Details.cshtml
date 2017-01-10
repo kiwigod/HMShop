@@ -1,0 +1,162 @@
+@model HoneymoonShop.Models.Blog
+
+@{
+    ViewData["Title"] = "Details";
+    ViewData["Background"] = "white";
+    ViewData["HeaderHeight"] = "10";
+}
+
+@section Imports{
+    <link href="https://fonts.googleapis.com/css?family=Cookie|Lato" rel="stylesheet">
+    <link href="~/css/blog.css" rel="stylesheet" />
+    <link href="~/css/blog-detail.css" rel="stylesheet" />
+}
+
+<div class="container" style="background:white">
+    <hr style="border-top:1px solid #E5E5E5; width:100%" />
+    <div class="row">
+        <div class="col-md-12">
+            <ol class="breadcrumb">
+                <li><a asp-action="Index" asp-controller="Home" style="color:#f47590">Home</a></li>
+                <li><a asp-action="Index" asp-controller="Blog" style="color:#f47590">Blog</a></li>
+                <li><a asp-action="Index" asp-controller="Blog" style="color:#f47590">Evenementen</a></li>
+                <li class="active">Love &Aacute; Marriage beurs</li>
+            </ol>
+        </div>
+    </div>
+
+    <div class="row center">
+        <div class="col-md-6 titles">
+            
+            <div class="title-big" style="font-family: 'Cookie'; font-style:italic">Evenement</div>
+            <div class="title">DE HONEYMOON SHOP STOND OP <br> DE LOVE & MARRIAGE BEURS</div>
+        </div>
+    </div>
+
+    @*<div class="row">
+        <div class="col-lg-12"style="text-align:center">
+             <img src="http://www.fontspace.com/preview/m/446af600ed2060ef7823fbd5ad0a0c10.png" alt="evenement" id="evenement-img" class="img-responsive"> 
+            <b id="ev-txt2"> </b>
+            <b id="ev-txt" class="img-responsive"> </b>
+        </div>
+    </div>*@
+
+    <br> <br>
+
+    <div class="center row">
+        <div class="col-lg-5 col-sm-10 col-xs-9">
+                
+
+                <img class="mySlides img-responsive" src="http://img.alicdn.com/imgextra/i1/1843782477/TB2E1IxXVXXXXaUXpXXXXXXXXXX_!!1843782477.jpg">
+
+                <img class="mySlides img-responsive" src="https://picsg.files.wordpress.com/2014/09/girls-women-stylish-wedding-bridal-hairstyle-for-brides-party-receptions-new-fashion.jpg">
+
+                <img class="mySlides img-responsive" src="http://g01.a.alicdn.com/kf/HTB1HgNaJFXXXXb.XVXXq6xXFXXXJ/The-bride-jewelry-authentic-European-female-flowers-font-b-antlers-b-font-Sen-Vincent-Flower-font.jpg">
+
+                <img class="mySlides img-responsive" src="http://image.dhgate.com/albu_628845370_00/temp2.0x0.jpg">
+
+            <script src="~/js/blog.js"> </script>
+            <div class="center">
+                <div>
+                    <a style="" class="btn-default" onclick="plusDivs(-1)">&#9664</a>
+                    <a id="element"> 1/4 </a>
+                    <a style="" class="btn-default" onclick="plusDivs(+1)">&#9654</a>
+                </div>
+            </div>
+            <br>  <br> <br>  <br>
+
+        </div>
+    </div>
+
+
+    <div class="center row">
+        <div class="col-lg-4 col-md-5 col-sm-7 blog-txt" style="text-align:left;">
+            <p id="blog-txt-3" style="max-width:25em; margin-bottom:5em"> Afgelopen weekend waren wij op de Love & Marriage beurs in Ahoy te Rotterdam. Hier hebben wij de mooiste jurken uit de 2017 collectie geschowd.</p>
+
+            <p id="blog-txt-3"style="max-width:25em">  Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod tempor incididunt ut labore et <br>dolore magna aliqua. Ut enim ad minim veniam, quis <br> nostrud exercitation ullamco laboris nisi ut aliquip ex <br>ea commodo consequat. Duit autre irure dolor in <br>reprehenderit in voluptate velit esse cillum dolore eu<br> fugiat nulla pariaptur. Excepteur sint occaecat<br> capidatat non priodent, sunt in culpa qui officia <br>deserunt mollit anim id est laborum. </p>
+            <br> <br>
+        </div>
+    </div>
+
+    <div class="center row">
+        <div class="col-lg-7 col-md-8 col-sm-11">
+            <img src="http://lowcountrybride.com/wp-content/uploads/2016/04/Schmidt369.jpg" alt="video beurs" class="img-responsive video-img">
+
+            <a id="bekijk-vid" href="http://google.nl"><span> <b id="arrow"> &#9654</b> <b> BEKIJK VIDEO </b></span></a>
+            <br>
+
+            <span id="span-vid"> Afgelopen weekend waren wij op<br> de Love & Marriage beurs in Ahoy<br> te Rotterdam. Hier hebben wij de<br> mooiste jurken uit de 2017 collectie<br> geshowd.</span>
+
+            <br> <br>
+
+        </div>
+    </div>
+    <br> <br><br> <br><br> <br><br> 
+    <div class="center row">
+        <br> <br>
+
+        <div class="col-lg-4 col-md-5 col-sm-8">
+            <p id="blog-txt-3"style="max-width:25em">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et 
+            dolore magna aliqua. Ut enim ad minim veniam, quis 
+            nostrud exercitation ullamco laboris nisi ut aliquip ex 
+            ea commodo consequat. Duit autre irure dolor in 
+            reprehenderit in voluptate velit esse cillum dolore eu
+            fugiat nulla pariaptur. Excepteur sint occaecat
+            capidatat non priodent, sunt in culpa qui officia
+            deserunt mollit anim id est laborum. </p>
+            <br> <br>
+
+        </div>
+    </div>
+    
+    <div class="center row">
+        <div class="col-lg-3 col-md-5 col-sm-6 col-xs-10" >
+            <h4 id="deel-dit">
+                <b>DEEL DIT</b>
+                <img src="~/images/web/deel-dit.png" width="214" height="57" border="0" usemap="#map" />
+                <map name="map">
+
+                    <area shape="rect" coords="1,1,46,57" alt="facebook" href="http://facebook.com" />
+                    <area shape="rect" coords="47,2,91,55" alt="twitter" href="http://twitter.com" />
+                    <area shape="rect" coords="93,1,131,55" alt="pinterest" href="http://pinterest.com" />
+                    <area shape="rect" coords="132,2,167,57" alt="youtube" href="http://youtube.com" />
+                    <area shape="rect" coords="167,1,213,58" alt="instagram" href="http://instagram.com" />
+                </map>
+
+            </h4>
+        </div>
+    </div>
+
+    <br> <br> <br> <br>
+
+    <div class="row center">
+        <div class="col-md-6 titles">
+
+            <div class="title-big" style="font-family: 'Cookie'; font-style:italic;">Blog</div>
+            <div class="title">Gerelateerde Berichten</div>
+        </div>
+    </div>
+</div>
+
+
+
+@*<h2>Details</h2>
+
+<div>
+    <h4>Blog</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Type)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Type)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.ID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>*@
