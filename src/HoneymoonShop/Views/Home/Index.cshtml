@@ -1,0 +1,205 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+    ViewData["Background"] = "url(/images/web/header_index.jpg)";
+    ViewData["HeaderHeight"] = "60em";
+}
+
+@section Imports{
+    <script src="~/js/script.js"></script>
+    <link rel="stylesheet" href="~/css/blog.css" />
+}
+
+@section HeaderOverlay{
+    <div class="container-fluid">
+        @*<div style="position:absolute; margin-left:20%; font-size:11em; font-family: 'Cookie', cursive; color:rgba(255, 255, 255, 0.4); margin-top:9%">
+            Bruidswinkel
+        </div>*@
+        <div class="row" style="margin-top:20%">
+            <h2 class="col-lg-12 col-md-12" style="color: white; text-align:center">Al bijna 50 jaar de grootste bruidszaak van Nederland.</h2>
+        </div>
+        <div class="row">
+            <h1 class="col-lg-12 col-md-12" style="color: white; text-align:center; margin-top:0"><b>HOE KUNNEN WE JOU HELPEN?</b></h1>
+        </div>
+        <div class="row" style="margin-top:3em">
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12" style="text-align:right">
+                <a asp-controller="Dresses" asp-action="Overview" class="btn btn-default primary-button index-button" style="border-width:6px"> <b>BRUID</b></a>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                <a class="btn btn-default primary-button index-button" style="background-color:rgba(0,0,0,0); border: 6px solid white"> <b>BRUIDEGOM</b></a>
+            </div>
+        </div>
+        <div class="row" style="margin-top:8em; text-align:center; color:white">
+            <p>Scroll</p>
+            <span>&#9660;</span>
+        </div>
+    </div>
+}
+
+<div class="container jurk-pak-height" style="background:white">
+    <div class="row">
+        <div class="col-md-12 bgtext" style="text-align:center; background:url(http://placehold.it/4096x300)">
+            <h2 style="padding-top:4.0em">
+                <b>
+                    EEN JURK OF PAK KOPEN?<br>
+                    ZO WERKT HET...
+                </b>
+            </h2>
+        </div>
+    </div>
+    @Html.Partial("_ButtonPartial")
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 bgtext" style="text-align:center; background:url(http://placehold.it/4096x300)">
+            <h2 style="padding-top:4.0em">
+                <b>
+                    BLIJF OP DE HOOGTE OVER<br>
+                    DE BRUIDSWERELD
+                </b>
+            </h2>
+        </div>
+    </div>
+</div>
+<div class="container containerstyle">
+    <div class="row blog-top-picture">
+        <div class="blog-top-item" style="background:url(/images/web/blog/post1.jpg)">
+            <div class="blog-top-block">
+                <div class="top-block-header">
+                    <div class="block-item-titel">EVENEMENT</div>
+                    <div class="block-item-date">
+                        <div style="font-size:1.95em">10</div>
+                        <div>JAN</div>
+                    </div>
+                </div>
+                <div class="block-item-text">
+                    Afgelopen weekend waren wij op de Love & Marriage beurs in Ahoy
+                    te Rotterdam. Hier hebben wij de mooiste jurken uit de 2017
+                    collectie geshowd.
+                </div>
+                <div class="block-item-text"><u><a asp-controller="Posts" asp-action="Details/1">Lees meer</a></u> <strong>&#8594;</strong></div>
+            </div>
+        </div>
+        <div class="blog-top-item" style="background:url(/images/web/blog/post2.jpg)">
+            <div class="blog-top-block">
+                <div class="top-block-header">
+                    <div class="block-item-titel">EVENEMENT</div>
+                    <div class="block-item-date">
+                        <div style="font-size:1.95em">10</div>
+                        <div>JAN</div>
+                    </div>
+                </div>
+                <div class="block-item-text">
+                    Afgelopen weekend waren wij op de Love & Marriage beurs in Ahoy
+                    te Rotterdam. Hier hebben wij de mooiste jurken uit de 2017
+                    collectie geshowd.
+                </div>
+                <div class="block-item-text"><u><a href="http://google.nl">Lees meer</a></u> <strong>&#8594;</strong></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container padding-box" style="display:flex; flex-direction:column; background:white; padding-top:4.5em;">
+    <div class="row">
+        <div class="col-md-4 col-xs-12 padding-box-right" style="">
+            <div class="box">
+                <h4>Veelgestelde vragen</h4>
+                <hr>
+                <div style="padding-top: 4px">
+                    De Honeymoon shop heeft een aantal service punten in Nederland. Hier kun je je bruidskleding laten afspelden en vermaken.
+                    <br> lees meer
+                </div>
+            </div>
+            <div class="box">
+                <h4>Veelgestelde vragen</h4>
+                <hr>
+                <div style="padding-top: 4px">
+                    De Honeymoon shop heeft een aantal service punten in Nederland. Hier kun je je bruidskleding laten afspelden en vermaken.
+                    <br> lees meer
+                </div>
+            </div>
+            <div class="box">
+                <h4>Veelgestelde vragen</h4>
+                <hr>
+                <div style="padding-top: 4px">
+                    De Honeymoon shop heeft een aantal service punten in Nederland. Hier kun je je bruidskleding laten afspelden en vermaken.
+                    <br> lees meer
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-12 padding-box-right">
+            <div class="box">
+                <h4>Veelgestelde vragen</h4>
+                <hr>
+                <div style="padding-top: 4px">
+                    De Honeymoon shop heeft een aantal service punten in Nederland. Hier kun je je bruidskleding laten afspelden en vermaken.
+                    <br> lees meer
+                </div>
+            </div>
+            <div class="box text-uppercase" style="background:#cce7d4">
+                <b>Schrijf je in voor onze nieuwsbrief</b>
+            </div>
+            <div class="box">
+                <h4>Veelgestelde vragen</h4>
+                <hr>
+                <div style="padding-top: 4px">
+                    De Honeymoon shop heeft een aantal service punten in Nederland. Hier kun je je bruidskleding laten afspelden en vermaken.
+                    <br> lees meer
+                </div>
+            </div>
+            <div class="box">
+                <h4>Veelgestelde vragen</h4>
+                <hr>
+                <div style="padding-top: 4px">
+                    De Honeymoon shop heeft een aantal service punten in Nederland. Hier kun je je bruidskleding laten afspelden en vermaken.
+                    <br> lees meer
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 col-xs-12">
+            <div class="box">
+                <h4>Veelgestelde vragen</h4>
+                <hr>
+                <div style="padding-top: 4px">
+                    De Honeymoon shop heeft een aantal service punten in Nederland. Hier kun je je bruidskleding laten afspelden en vermaken.
+                    <br> lees meer
+                </div>
+            </div>
+            <div class="box">
+                <h4>Veelgestelde vragen</h4>
+                <hr>
+                <div style="padding-top: 4px">
+                    De Honeymoon shop heeft een aantal service punten in Nederland. Hier kun je je bruidskleding laten afspelden en vermaken.
+                    <br> lees meer
+                </div>
+            </div>
+            <div class="box text-uppercase" style="background:#f0597c; color:white">
+                <b>Wij zijn opzoek naar een verkoop styliste</b>
+            </div>
+            <div class="box">
+                <h4>Veelgestelde vragen</h4>
+                <hr>
+                <div style="padding-top: 4px">
+                    De Honeymoon shop heeft een aantal service punten in Nederland. Hier kun je je bruidskleding laten afspelden en vermaken.
+                    <br> lees meer
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 col-xs-12" style="text-align:center">
+            <button class="btn btn-default primary-button index-button" type="button" style="border-width:6px; border-radius:0%"><b>MEER BERICHTEN</b></button>
+        </div>
+    </div>
+    <div class="row" style="padding-top:2em">
+        <div class="col-md-12 col-xs-12" style="text-align:center">
+            <p> <b style="color:#f0597c; font-size:2em">▼</b> </p>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 col-xs-12" style="padding-left:0%; padding-right:0%">
+            <img src="~/images/web/index_footer.png" class="img-responsive" />
+        </div>
+    </div>
+</div>
